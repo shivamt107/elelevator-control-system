@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/elelevator-control-system/static/css/main.b7a7e9b0.css",
-    "main.js": "/elelevator-control-system/static/js/main.51a5e10d.js",
+    "main.css": "/elelevator-control-system/static/css/main.c00c5d72.css",
+    "main.js": "/elelevator-control-system/static/js/main.9e62706d.js",
     "static/js/909.0f0493d3.chunk.js": "/elelevator-control-system/static/js/909.0f0493d3.chunk.js",
-    "static/js/368.0a57cc62.chunk.js": "/elelevator-control-system/static/js/368.0a57cc62.chunk.js",
-    "static/js/469.22c9779e.chunk.js": "/elelevator-control-system/static/js/469.22c9779e.chunk.js",
-    "static/js/160.762d6f07.chunk.js": "/elelevator-control-system/static/js/160.762d6f07.chunk.js",
+    "static/js/368.43d47886.chunk.js": "/elelevator-control-system/static/js/368.43d47886.chunk.js",
+    "static/js/469.433ddfd9.chunk.js": "/elelevator-control-system/static/js/469.433ddfd9.chunk.js",
+    "static/js/160.178365a6.chunk.js": "/elelevator-control-system/static/js/160.178365a6.chunk.js",
     "static/js/453.93833b07.chunk.js": "/elelevator-control-system/static/js/453.93833b07.chunk.js",
     "index.html": "/elelevator-control-system/index.html",
-    "main.b7a7e9b0.css.map": "/elelevator-control-system/static/css/main.b7a7e9b0.css.map",
-    "main.51a5e10d.js.map": "/elelevator-control-system/static/js/main.51a5e10d.js.map",
+    "main.c00c5d72.css.map": "/elelevator-control-system/static/css/main.c00c5d72.css.map",
+    "main.9e62706d.js.map": "/elelevator-control-system/static/js/main.9e62706d.js.map",
     "909.0f0493d3.chunk.js.map": "/elelevator-control-system/static/js/909.0f0493d3.chunk.js.map",
-    "368.0a57cc62.chunk.js.map": "/elelevator-control-system/static/js/368.0a57cc62.chunk.js.map",
-    "469.22c9779e.chunk.js.map": "/elelevator-control-system/static/js/469.22c9779e.chunk.js.map",
-    "160.762d6f07.chunk.js.map": "/elelevator-control-system/static/js/160.762d6f07.chunk.js.map",
+    "368.43d47886.chunk.js.map": "/elelevator-control-system/static/js/368.43d47886.chunk.js.map",
+    "469.433ddfd9.chunk.js.map": "/elelevator-control-system/static/js/469.433ddfd9.chunk.js.map",
+    "160.178365a6.chunk.js.map": "/elelevator-control-system/static/js/160.178365a6.chunk.js.map",
     "453.93833b07.chunk.js.map": "/elelevator-control-system/static/js/453.93833b07.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7a7e9b0.css",
-    "static/js/main.51a5e10d.js"
+    "static/css/main.c00c5d72.css",
+    "static/js/main.9e62706d.js"
   ]
 }
