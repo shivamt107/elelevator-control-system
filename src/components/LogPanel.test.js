@@ -58,7 +58,7 @@ describe('LogPanel Component', () => {
   test('applies correct styling classes', () => {
     const { container } = render(<LogPanel logs={['Test log']} />);
     
-    const logContainer = container.querySelector('.bg-gray-900');
+    const logContainer = container.querySelector('.bg-gray-950');
     expect(logContainer).toBeInTheDocument();
   });
 });

@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# Elevator Control System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A real-time elevator control system simulation built with React. Features intelligent elevator dispatching, visual floor representation, and comprehensive testing.
+
+## Live Demo
+
+[View Live Demo](https://shivamt107.github.io/elelevator-control-system)
+
+## Features
+
+- **Smart Elevator Dispatching**: Intelligent algorithm assigns closest available elevator based on direction and distance
+- **Real-time Simulation**: 10-second travel and loading times with live state updates
+- **Visual Building Representation**: 10-floor building with 4 elevators and interactive call buttons
+- **Auto-generation Mode**: Random elevator requests at 5-15 second intervals
+- **Performance Optimized**: Code splitting, React.memo, useMemo, and state caching
+- **Comprehensive Testing**: 111 Jest tests with full coverage
+- **Accessible**: WCAG compliant with keyboard navigation support
+- **Responsive Design**: Mobile-friendly interface with Tailwind CSS
+
+## Technical Stack
+
+- React 19.2.0
+- Tailwind CSS 3.4.0
+- Jest & React Testing Library
+- Factory function pattern for state management
+- Closure-based encapsulation
+
+## Installation
+
+```bash
+npm install
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
-
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000)
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the test suite with 111 tests covering all functionality
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Creates optimized production build in the `build` folder
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm run deploy`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds and deploys to GitHub Pages
 
-### `npm run eject`
+## Architecture
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Core Components
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **createElevator()**: Factory function managing individual elevator state and behavior
+- **createElevatorController()**: Orchestrates multiple elevators and request dispatching
+- **BuildingView**: Visual representation of floors and elevator positions
+- **ElevatorCar**: Individual elevator status display
+- **ControlPanel**: Simulation controls
+- **LogPanel**: Real-time activity logging
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- React.lazy for code splitting
+- React.memo for component memoization
+- useMemo for expensive computations
+- useCallback for stable function references
+- State caching in service layer
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Testing
 
-## Learn More
+```bash
+npm test
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+All 111 tests cover:
+- Elevator movement and state transitions
+- Controller request handling and dispatching
+- Component rendering and interactions
+- Edge cases and error handling
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deployment
 
-### Code Splitting
+Deployed to GitHub Pages:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run deploy
+```
 
-### Analyzing the Bundle Size
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+src/
+├── services/
+│   ├── Elevator.js
+│   └── ElevatorController.js
+├── components/
+│   ├── BuildingView.js
+│   ├── ElevatorCar.js
+│   ├── LogPanel.js
+│   └── ControlPanel.js
+├── App.js
+└── index.js
+```
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT

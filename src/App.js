@@ -160,7 +160,7 @@ function App() {
           </p>
         </header>
 
-        <Suspense fallback={<div className="text-center py-8">Loading ...</div>}>
+        <Suspense fallback={<div className="text-center py-8" role="status" aria-live="polite">Loading...</div>}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
             <div className="lg:col-span-2">
               <BuildingView
@@ -180,7 +180,7 @@ function App() {
                 onToggleAutoGenerate={handleToggleAutoGenerate}
               />
 
-              <div className="grid grid-cols-1 gap-4">
+              <div className="grid grid-cols-1 gap-4" role="region" aria-label="Elevator status cards">
                 {systemState.elevators.map((elevator) => (
                   <ElevatorCar key={elevator.id} elevator={elevator} />
                 ))}
